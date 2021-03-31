@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <script src="assets\javascript\game.js"></script>
+
+</head>
+
+<body>
+
+    <div class="base">
+
+        <div class="first-header">
+
+            <div class="row">
+                <div class="col-md-3">
+
+                    <img src="assets\images\mainpic.jpg" class="bioImage" alt="Bio Header Image" />
+                </div>
+                <div class="col-md-9">
+                    <img src="assets\images\mainpic.jpg" class="titleImage" alt="Image" />
+                </div>
+            </div>
+        </div>
+
+        <div class="header2">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <h2 id="user-text">Type any
+                        <span>
+                            <strong>Letter&#x1F525.</strong>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="header3">
+
+            <div class="row">
+
+
+                <div class="col-md-8 game-controlColum">
+                    <h2>HIT ANY KEY TO GET STARTED</h2>
+                    <h4>GUESS WHAT LETTER AM THINKING</h4>
+                    <h5 id="totalWins"></h5>
+                    <h4>WINS</h4>
+                    <h2 id="currentWord"></h2>
+
+                    <h4>NUMBER OF ATTEMPTS REMAINING</h4>
+                    <h6 id="guessesRemain"></h6>
+                    <h4>GUESSED LETTERS</h4>
+                    <h3 id="lettersGuessed"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 image-controlColum">
+
+            <img id="Image" src="assets/images/9.jpg" width="550" border-radius="50%" height="400" />
+            <img id="winImage" src="assets/images/Win.jpg" width="550" height="400" />
+            <img id="gameoverImage" src="assets/images/Gameover.jpg" width="550" height="400" />
+            <p id="pressKeyTryAgain">Press Any Key to Try Again!</p>
+            <img id="  " src="" alt="" />
+        </div>
+    </div>
+
+    <script>
+        gameReset();
+        updateDisplay();
+    </script>
+
+</body>
+
+</html>
